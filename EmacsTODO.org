@@ -7,8 +7,10 @@
 - [ ] terminal/shell layer
 - [ ] git
 - [ ] org-presentation
-** TODO GUI version problems [0/3]
-- [ ] fontconfig: emoji, chinese, bottomline
+- [ ] I wrote chinese in command mode, and open org in gui, then it not work in command mode
+- [ ] fast way to find keymaps for a specific mode, like org mode
+** TODO GUI version problems [1/3]
+- [X] fontconfig: emoji, chinese, bottomline
 - [ ] chinese input method, remi
 - [ ] eaf layer?
   - [ ] netease-music, need download-api?
@@ -26,8 +28,18 @@
 8. how to input code??
 9. T shortcut not work??
 10. how to make list to title, more shortcut tutorials
+** Grep
+~SPC s g~
+** Font
+~fc-cache -fv~ update font cache
+~fc-list~ check all installed fonts
 ** Related links
 [[(25) Org mode and Spacemacs: The Absolute Minimum you need to know - YouTube][https://www.youtube.com/watch?v=S4f-GUxu3CY]]
 ** 测试中文输入
-使用终端版 emacs ~emacs -nw~ 即可使用 windows 自带中文输入法, 不需再配置 rime, fcitx等等
+使用终端版 emacs ~emacs -nw~ 即可使用 windows 自带中文输入法, 不需再配置 rime, fcitx 等等
+** Table
+| col 1 | col 2 | col 3                    |
+|-------+-------+--------------------------|
+| nice  | table | can be change with ~tab~ |
+| also  | can   | have 中文                |
 

@@ -54,7 +54,7 @@ This function should only modify configuration layer settings."
      syntax-checking
      chinese
      unicode-fonts
-     eaf
+     ;; eaf
      ;; version-control
      treemacs)
 
@@ -251,9 +251,9 @@ It should only modify the values of Spacemacs settings."
    ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
    ;; dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
-   ;; dotspacemacs-mode-line-theme '(doom :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(doom :separator wave :separator-scale 1.5)
    ;; dotspacemacs-mode-line-theme '(all-the-icons :separator wave :separator-scale 1.5)
-   dotspacemacs-mode-line-theme '(vim-powerline :separator wave :separator-scale 1.5)
+   ;; dotspacemacs-mode-line-theme '(vim-powerline :separator wave :separator-scale 1.5)
    ;; dotspacemacs-mode-line-theme '(vanilla :separator wave :separator-scale 1.5)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
@@ -263,7 +263,7 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("SauceCodePro Nerd Font Mono"
                                :size 14.0
                                :weight normal
                                :width normal)
