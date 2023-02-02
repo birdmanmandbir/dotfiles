@@ -9,11 +9,11 @@
 - [ ] org-presentation
 - [ ] I wrote chinese in command mode, and open org in gui, then it not work in command mode
 - [ ] fast way to find keymaps for a specific mode, like org mode
-** TODO GUI version problems [1/3]
+** TODO GUI version problems [2/3]
 - [X] fontconfig: emoji, chinese, bottomline
 - [ ] chinese input method, remi
-- [ ] eaf layer?
-  - [ ] netease-music, need download-api?
+- [X] eaf layer?
+  - [X] netease-music, need download-api? -> cannot run
 ** Org mod keymaps remember
 - <C-ENT> not work in command-line version?
 - ,, update parent task status
