@@ -47,9 +47,9 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
      chinese
@@ -250,7 +250,11 @@ It should only modify the values of Spacemacs settings."
    ;; refer to the DOCUMENTATION.org for more info on how to create your own
    ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
+   ;; dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
+   ;; dotspacemacs-mode-line-theme '(doom :separator wave :separator-scale 1.5)
+   ;; dotspacemacs-mode-line-theme '(all-the-icons :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(vim-powerline :separator wave :separator-scale 1.5)
+   ;; dotspacemacs-mode-line-theme '(vanilla :separator wave :separator-scale 1.5)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
