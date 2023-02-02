@@ -63,6 +63,7 @@ This function should only modify configuration layer settings."
      unicode-fonts
      ;; eaf
      ;; version-control
+     (xclipboard :variables xclipboard-enable-cliphist t)
      treemacs)
 
 
@@ -570,6 +571,9 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
           ("nongnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
           ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   (setq evil-want-keybinding nil)
+  ;; this will show stacktraces when their is error
+  ;; (setq debug-on-error t)
+  (setq lsp-enable-file-watchers nil)
 )
 
 
