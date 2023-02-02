@@ -1,0 +1,6 @@
+*
+!.spacemacs
+!.fonts/*.ttf
+!.zshrc
+!.gitignore
+!.npmrc
