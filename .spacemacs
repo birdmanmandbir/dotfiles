@@ -46,6 +46,7 @@ This function should only modify configuration layer settings."
      syntax-checking
      lsp
      dap
+     ;; debug
 
      better-defaults
      emacs-lisp
