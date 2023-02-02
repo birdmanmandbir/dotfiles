@@ -1,14 +1,20 @@
 * <C-Ent>create a new header
 ** sub title, can be fold with <tab>
 ** TODO TOLearn [0/8] [0%]
-- [ ] fontconfig: emoji, chinese, bottomline
 - [ ] docker and kubernetes layer
-- [ ] eaf layer?
-- [ ] chinese input method, remi
 - [ ] elisp
 - [ ] more org-mode
 - [ ] terminal/shell layer
 - [ ] git
+- [ ] org-presentation
+** TODO GUI version problems [0/3]
+- [ ] fontconfig: emoji, chinese, bottomline
+- [ ] chinese input method, remi
+- [ ] eaf layer?
+  - [ ] netease-music, need download-api?
+** Org mod keymaps remember
+- <C-ENT> not work in command-line version?
+- ,, update parent task status
 ** Feel about org-mode
 1. nice for list and list content text
 2. fast move different part faster than Mubu
@@ -22,3 +28,6 @@
 10. how to make list to title, more shortcut tutorials
 ** Related links
 [[(25) Org mode and Spacemacs: The Absolute Minimum you need to know - YouTube][https://www.youtube.com/watch?v=S4f-GUxu3CY]]
+** 测试中文输入
+使用终端版 emacs ~emacs -nw~ 即可使用 windows 自带中文输入法, 不需再配置 rime, fcitx等等
+
