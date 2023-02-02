@@ -1,0 +1,17 @@
+* <C-Ent>create a new header
+** sub title, can be fold with <tab>
+** TODO TOLearn [0/3] [0%]
+- [ ] fontconfig: emoji, chinese, bottomline
+- [ ] docker and kubernetes layer
+- [ ] eaf layer?
+** Feel about org-mode
+1. nice for list and list content text
+2. fast move different part faster than Mubu
+3. fold or unfold fast
+4. more beautiful
+5. search title with <leader>ji
+6. fast input table
+7. table can do calculation??
+8. how to input code??
+9. T shortcut not work??
+10. how to make list to title, more shortcut tutorials 
