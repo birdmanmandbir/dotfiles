@@ -34,18 +34,23 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(typescript
      yaml
-     go
+     (go :variables
+         go-backend 'lsp
+         godoc-at-point-function 'godoc-gogetdoc)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
+     syntax-checking
+     lsp
+     dap
+
      better-defaults
      emacs-lisp
      git
      helm
-     lsp
      markdown
      multiple-cursors
      org
@@ -54,7 +59,6 @@ This function should only modify configuration layer settings."
             shell-default-height 30
             shell-default-position 'bottom)
      ;; spell-checking
-     syntax-checking
      chinese
      unicode-fonts
      ;; eaf
