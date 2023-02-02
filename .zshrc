@@ -115,6 +115,7 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 # goland
 export PATH=$PATH:/home/neil/download/GoLand-2022.3.1/bin
+export PATH=$PATH:/snap/bin
 # alias
 # alias vim='nvim'
 # alias vi='nvim'
