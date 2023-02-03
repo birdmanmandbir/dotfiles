@@ -118,8 +118,8 @@ export PATH=$PATH:/home/neil/go/bin
 export PATH=$PATH:/home/neil/download/GoLand-2022.3.1/bin
 export PATH=$PATH:/snap/bin
 # alias
-# alias vim='nvim'
-# alias vi='nvim'
-# alias v='nvim'
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
 alias lg=lazygit
 alias e='emacs -nw'
