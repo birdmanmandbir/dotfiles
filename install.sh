@@ -5,10 +5,8 @@ for file in ${fileList[*]}; do
     # https://stackoverflow.com/questions/5767062/how-to-check-if-a-symlink-exists
     dir=${HOME}/${file}
     gitDir=${HOME}/.dotfiles/${file}
-    echo $dir
-    if [ -L $dir ]
-    then
-        rm $dir
-    fi
+    echo $dir" updated"
+    if [ -L $dir ]; then rm $dir; fi;
+    if [ -f $dir ]; then rm $dir; fi;
     ln -s $gitDir $dir
 done
