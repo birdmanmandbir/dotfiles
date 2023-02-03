@@ -54,7 +54,12 @@ This function should only modify configuration layer settings."
      helm
      markdown
      multiple-cursors
-     org
+     (org :variables
+          org-want-todo-bindings t
+          org-enable-appear-support t
+          org-projectile-file "TODOs.org"
+          org-enable-reveal-js-support t
+          org-enable-github-support t)
      (shell :variables
             shell-default-shell 'vterm
             shell-default-height 30
@@ -65,7 +70,11 @@ This function should only modify configuration layer settings."
      ;; eaf
      ;; version-control
      (xclipboard :variables xclipboard-enable-cliphist t)
-     treemacs)
+     (treemacs :variables
+               treemacs-collapse-dirs 3
+               treemacs-use-follow-mode t
+               treemacs-use-git-mode 'deferred)
+    )
 
 
    ;; List of additional packages that will be installed without being wrapped
