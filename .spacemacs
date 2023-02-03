@@ -47,7 +47,7 @@ This function should only modify configuration layer settings."
      lsp
      dap
      ;; debug
-
+     search-engine
      better-defaults
      emacs-lisp
      git
@@ -604,6 +604,9 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq-default evil-escape-key-sequence "jk")
   (display-time-mode t)
+  (setq browse-url-browser-function 'browse-url-generic
+        engine/browser-function 'browse-url-generic
+        browse-url-generic-program "microsoft-edge")
 )
 
 
