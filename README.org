@@ -1,2 +1,6 @@
 * dotfiles
 my dot files
+** Setup
+git clone git@github.com:birdmanmandbir/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles; bash install.sh
+
