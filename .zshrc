@@ -70,7 +70,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git extract autojump docker zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(sudo git extract autojump zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -101,7 +101,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Proxy
 host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
-export ALL_PROXY="http://$host_ip:7890"
+# export ALL_PROXY="http://$host_ip:7890"
+# export http_proxy="http://$host_ip:7890"
+# export https_proxy="http://$host_ip:7890"
+proxy=""
+export proxy="http://$host_ip:7890"
+# export proxy="http://host.docker.internal:7890"
+export ALL_PROXY=$proxy
+export http_proxy=$proxy
+export https_proxy=$proxy
 export NO_PROXY="*.aliyun.com;goproxy.cn"
 
 # NVM
@@ -113,13 +121,25 @@ export FLYCTL_INSTALL="/home/neil/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 # go
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/neil/.local/bin
 export PATH=$PATH:/home/neil/go/bin
 # goland
 export PATH=$PATH:/home/neil/download/GoLand-2022.3.1/bin
 export PATH=$PATH:/snap/bin
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 # alias
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 alias lg=lazygit
 alias e='emacs -nw'
+#alias code='/mnt/c/Users/A/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
+alias k=kubectl
+alias python=python3
+
+# bun completions
+[ -s "/home/neil/.bun/_bun" ] && source "/home/neil/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
